@@ -1,1 +1,1 @@
-# -Vocabulabo
+# Vocabulabo
