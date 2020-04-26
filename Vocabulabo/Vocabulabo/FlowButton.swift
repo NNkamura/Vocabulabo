@@ -18,7 +18,7 @@ class FlowButton: UIButton {
     override init(frame: CGRect) {
         super.init(frame: frame)
         self.setTitle(setTitle, for: UIControl.State.normal)
-        self.setTitleColor(UIColor.white, for: UIControl.State.normal)
+        self.setTitleColor(UIColor.assistantColor, for: UIControl.State.normal)
         self.backgroundColor = UIColor.clear
         self.layer.masksToBounds = true
         self.layer.cornerRadius = 2

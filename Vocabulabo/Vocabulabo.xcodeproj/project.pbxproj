@@ -20,6 +20,7 @@
 		A21DA9A123E560EF00EBF8D3 /* VocabulaboUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A21DA9A023E560EF00EBF8D3 /* VocabulaboUITests.swift */; };
 		A21DA9AF23E5614300EBF8D3 /* UseRealm.swift in Sources */ = {isa = PBXBuildFile; fileRef = A21DA9AE23E5614300EBF8D3 /* UseRealm.swift */; };
 		A2674B222455C851001828FE /* Color.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A2674B212455C851001828FE /* Color.xcassets */; };
+		A2674B242455D9D9001828FE /* Constraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2674B232455D9D9001828FE /* Constraints.swift */; };
 		A26E246A23E6DB5C00324D0C /* UseUserDefault.swift in Sources */ = {isa = PBXBuildFile; fileRef = A26E246923E6DB5C00324D0C /* UseUserDefault.swift */; };
 		A26F072123E58F6100DB0251 /* ReadTextFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = A26F072023E58F6100DB0251 /* ReadTextFile.swift */; };
 		A26F072323E58FEB00DB0251 /* jawiki-20200120-1.txt in Resources */ = {isa = PBXBuildFile; fileRef = A26F072223E58FEB00DB0251 /* jawiki-20200120-1.txt */; };
@@ -72,6 +73,7 @@
 		A21DA9A223E560EF00EBF8D3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A21DA9AE23E5614300EBF8D3 /* UseRealm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UseRealm.swift; sourceTree = "<group>"; };
 		A2674B212455C851001828FE /* Color.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Color.xcassets; sourceTree = "<group>"; };
+		A2674B232455D9D9001828FE /* Constraints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constraints.swift; sourceTree = "<group>"; };
 		A26E246923E6DB5C00324D0C /* UseUserDefault.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UseUserDefault.swift; sourceTree = "<group>"; };
 		A26F072023E58F6100DB0251 /* ReadTextFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadTextFile.swift; sourceTree = "<group>"; };
 		A26F072223E58FEB00DB0251 /* jawiki-20200120-1.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "jawiki-20200120-1.txt"; sourceTree = SOURCE_ROOT; };
@@ -165,6 +167,7 @@
 				A29E4E7C23EB08070055787A /* FlowButton.swift */,
 				A26E246923E6DB5C00324D0C /* UseUserDefault.swift */,
 				A21DA9AE23E5614300EBF8D3 /* UseRealm.swift */,
+				A2674B232455D9D9001828FE /* Constraints.swift */,
 				A26F072623E596BB00DB0251 /* WikipediaUtil.swift */,
 				A26F072423E594D800DB0251 /* Constants.swift */,
 				A26F072023E58F6100DB0251 /* ReadTextFile.swift */,
@@ -440,6 +443,7 @@
 				A21DA98023E560ED00EBF8D3 /* ViewController.swift in Sources */,
 				A21DA98623E560ED00EBF8D3 /* Vocabulabo.xcdatamodeld in Sources */,
 				A26F072123E58F6100DB0251 /* ReadTextFile.swift in Sources */,
+				A2674B242455D9D9001828FE /* Constraints.swift in Sources */,
 				A26F072723E596BB00DB0251 /* WikipediaUtil.swift in Sources */,
 				A29E4E7D23EB08070055787A /* FlowButton.swift in Sources */,
 				A21DA9AF23E5614300EBF8D3 /* UseRealm.swift in Sources */,

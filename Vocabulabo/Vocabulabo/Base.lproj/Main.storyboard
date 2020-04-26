@@ -20,15 +20,15 @@
                                 <rect key="frame" x="44" y="0.0" width="808" height="393"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bO2-Ya-xjV">
-                                        <rect key="frame" x="0.0" y="0.0" width="808" height="300"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="808" height="350"/>
                                         <color key="backgroundColor" name="MainColor"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="300" id="Buh-Ic-ETd"/>
+                                            <constraint firstAttribute="height" constant="350" id="Buh-Ic-ETd"/>
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EwJ-VS-Hjp">
-                                        <rect key="frame" x="0.0" y="300" width="808" height="93"/>
-                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <rect key="frame" x="0.0" y="350" width="808" height="43"/>
+                                        <color key="backgroundColor" name="AssistantColor"/>
                                     </view>
                                 </subviews>
                             </stackView>
@@ -49,8 +49,11 @@
         </scene>
     </scenes>
     <resources>
+        <namedColor name="AssistantColor">
+            <color red="0.59999999999999998" green="0.89803921568627454" blue="0.7803921568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <namedColor name="MainColor">
-            <color red="0.18823529411764706" green="0.78823529411764703" blue="0.90980392156862744" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.40392156862745099" green="0.70588235294117641" blue="0.792156862745098" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
     </resources>
 </document>
