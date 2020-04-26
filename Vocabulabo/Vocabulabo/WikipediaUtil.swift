@@ -15,7 +15,7 @@ class WikipediaUtil: NSObject {
         for row in str.components(separatedBy: "\n"){
             let column = row.components(separatedBy: ":")
             if column.count != 3{
-                print("テキストファイルが正常に読み込めませんでした")
+                 print("テキストファイルが正常に読み込めませんでした")
                 print(column)
 //                break
 //                return nil

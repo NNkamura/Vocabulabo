@@ -19,11 +19,13 @@
 		A21DA99623E560EF00EBF8D3 /* VocabulaboTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A21DA99523E560EF00EBF8D3 /* VocabulaboTests.swift */; };
 		A21DA9A123E560EF00EBF8D3 /* VocabulaboUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A21DA9A023E560EF00EBF8D3 /* VocabulaboUITests.swift */; };
 		A21DA9AF23E5614300EBF8D3 /* UseRealm.swift in Sources */ = {isa = PBXBuildFile; fileRef = A21DA9AE23E5614300EBF8D3 /* UseRealm.swift */; };
-		A25A342323E5C72300F74650 /* WikipediaTitleData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A25A342223E5C72300F74650 /* WikipediaTitleData.swift */; };
+		A2674B222455C851001828FE /* Color.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A2674B212455C851001828FE /* Color.xcassets */; };
+		A26E246A23E6DB5C00324D0C /* UseUserDefault.swift in Sources */ = {isa = PBXBuildFile; fileRef = A26E246923E6DB5C00324D0C /* UseUserDefault.swift */; };
 		A26F072123E58F6100DB0251 /* ReadTextFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = A26F072023E58F6100DB0251 /* ReadTextFile.swift */; };
 		A26F072323E58FEB00DB0251 /* jawiki-20200120-1.txt in Resources */ = {isa = PBXBuildFile; fileRef = A26F072223E58FEB00DB0251 /* jawiki-20200120-1.txt */; };
 		A26F072523E594D800DB0251 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = A26F072423E594D800DB0251 /* Constants.swift */; };
 		A26F072723E596BB00DB0251 /* WikipediaUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = A26F072623E596BB00DB0251 /* WikipediaUtil.swift */; };
+		A29E4E7D23EB08070055787A /* FlowButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A29E4E7C23EB08070055787A /* FlowButton.swift */; };
 		B527B4FBAD13CEC7BBDDFD9A /* Pods_VocabulaboTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D829B32A91C5B20B9011A7D /* Pods_VocabulaboTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -69,11 +71,13 @@
 		A21DA9A023E560EF00EBF8D3 /* VocabulaboUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VocabulaboUITests.swift; sourceTree = "<group>"; };
 		A21DA9A223E560EF00EBF8D3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A21DA9AE23E5614300EBF8D3 /* UseRealm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UseRealm.swift; sourceTree = "<group>"; };
-		A25A342223E5C72300F74650 /* WikipediaTitleData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WikipediaTitleData.swift; sourceTree = "<group>"; };
+		A2674B212455C851001828FE /* Color.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Color.xcassets; sourceTree = "<group>"; };
+		A26E246923E6DB5C00324D0C /* UseUserDefault.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UseUserDefault.swift; sourceTree = "<group>"; };
 		A26F072023E58F6100DB0251 /* ReadTextFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadTextFile.swift; sourceTree = "<group>"; };
 		A26F072223E58FEB00DB0251 /* jawiki-20200120-1.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "jawiki-20200120-1.txt"; sourceTree = SOURCE_ROOT; };
 		A26F072423E594D800DB0251 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		A26F072623E596BB00DB0251 /* WikipediaUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WikipediaUtil.swift; sourceTree = "<group>"; };
+		A29E4E7C23EB08070055787A /* FlowButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlowButton.swift; sourceTree = "<group>"; };
 		FF1E04DBD31C417589A7D79C /* Pods-Vocabulabo-VocabulaboUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Vocabulabo-VocabulaboUITests.debug.xcconfig"; path = "Target Support Files/Pods-Vocabulabo-VocabulaboUITests/Pods-Vocabulabo-VocabulaboUITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -156,14 +160,16 @@
 				A26F072223E58FEB00DB0251 /* jawiki-20200120-1.txt */,
 				A21DA97B23E560ED00EBF8D3 /* AppDelegate.swift */,
 				A21DA97D23E560ED00EBF8D3 /* SceneDelegate.swift */,
-				A21DA97F23E560ED00EBF8D3 /* ViewController.swift */,
-				A21DA9AE23E5614300EBF8D3 /* UseRealm.swift */,
-				A26F072023E58F6100DB0251 /* ReadTextFile.swift */,
-				A25A342223E5C72300F74650 /* WikipediaTitleData.swift */,
-				A26F072423E594D800DB0251 /* Constants.swift */,
-				A26F072623E596BB00DB0251 /* WikipediaUtil.swift */,
 				A21DA98123E560ED00EBF8D3 /* Main.storyboard */,
+				A21DA97F23E560ED00EBF8D3 /* ViewController.swift */,
+				A29E4E7C23EB08070055787A /* FlowButton.swift */,
+				A26E246923E6DB5C00324D0C /* UseUserDefault.swift */,
+				A21DA9AE23E5614300EBF8D3 /* UseRealm.swift */,
+				A26F072623E596BB00DB0251 /* WikipediaUtil.swift */,
+				A26F072423E594D800DB0251 /* Constants.swift */,
+				A26F072023E58F6100DB0251 /* ReadTextFile.swift */,
 				A21DA98723E560EF00EBF8D3 /* Assets.xcassets */,
+				A2674B212455C851001828FE /* Color.xcassets */,
 				A21DA98923E560EF00EBF8D3 /* LaunchScreen.storyboard */,
 				A21DA98C23E560EF00EBF8D3 /* Info.plist */,
 				A21DA98423E560ED00EBF8D3 /* Vocabulabo.xcdatamodeld */,
@@ -300,6 +306,7 @@
 			files = (
 				A26F072323E58FEB00DB0251 /* jawiki-20200120-1.txt in Resources */,
 				A21DA98B23E560EF00EBF8D3 /* LaunchScreen.storyboard in Resources */,
+				A2674B222455C851001828FE /* Color.xcassets in Resources */,
 				A21DA98823E560EF00EBF8D3 /* Assets.xcassets in Resources */,
 				A21DA98323E560ED00EBF8D3 /* Main.storyboard in Resources */,
 			);
@@ -429,15 +436,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A26E246A23E6DB5C00324D0C /* UseUserDefault.swift in Sources */,
 				A21DA98023E560ED00EBF8D3 /* ViewController.swift in Sources */,
 				A21DA98623E560ED00EBF8D3 /* Vocabulabo.xcdatamodeld in Sources */,
 				A26F072123E58F6100DB0251 /* ReadTextFile.swift in Sources */,
 				A26F072723E596BB00DB0251 /* WikipediaUtil.swift in Sources */,
+				A29E4E7D23EB08070055787A /* FlowButton.swift in Sources */,
 				A21DA9AF23E5614300EBF8D3 /* UseRealm.swift in Sources */,
 				A21DA97C23E560ED00EBF8D3 /* AppDelegate.swift in Sources */,
 				A21DA97E23E560ED00EBF8D3 /* SceneDelegate.swift in Sources */,
 				A26F072523E594D800DB0251 /* Constants.swift in Sources */,
-				A25A342323E5C72300F74650 /* WikipediaTitleData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -7,6 +7,7 @@
 //
 
 import UIKit
+
 struct Constants{
     static let fileName = "jawiki-20200120-1"
 }
