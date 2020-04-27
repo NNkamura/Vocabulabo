@@ -17,18 +17,18 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="bIT-cQ-9FF">
-                                <rect key="frame" x="44" y="0.0" width="808" height="393"/>
+                                <rect key="frame" x="0.0" y="0.0" width="896" height="393"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bO2-Ya-xjV">
-                                        <rect key="frame" x="0.0" y="0.0" width="808" height="350"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="896" height="350"/>
                                         <color key="backgroundColor" name="MainColor"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="350" id="Buh-Ic-ETd"/>
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EwJ-VS-Hjp">
-                                        <rect key="frame" x="0.0" y="350" width="808" height="43"/>
-                                        <color key="backgroundColor" name="AssistantColor"/>
+                                        <rect key="frame" x="0.0" y="350" width="896" height="43"/>
+                                        <color key="backgroundColor" name="MainColor"/>
                                     </view>
                                 </subviews>
                             </stackView>
@@ -36,9 +36,9 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="bIT-cQ-9FF" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="4xe-eE-LtZ"/>
-                            <constraint firstItem="bIT-cQ-9FF" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="7ZI-m4-CnO"/>
+                            <constraint firstItem="bIT-cQ-9FF" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="7ZI-m4-CnO"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="bIT-cQ-9FF" secondAttribute="bottom" id="zRH-hQ-nYx"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="bIT-cQ-9FF" secondAttribute="trailing" id="zns-th-det"/>
+                            <constraint firstAttribute="trailing" secondItem="bIT-cQ-9FF" secondAttribute="trailing" id="zns-th-det"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -49,11 +49,8 @@
         </scene>
     </scenes>
     <resources>
-        <namedColor name="AssistantColor">
-            <color red="0.59999999999999998" green="0.89803921568627454" blue="0.7803921568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </namedColor>
         <namedColor name="MainColor">
-            <color red="0.40392156862745099" green="0.70588235294117641" blue="0.792156862745098" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.40400001406669617" green="0.70599997043609619" blue="0.79199999570846558" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
     </resources>
 </document>

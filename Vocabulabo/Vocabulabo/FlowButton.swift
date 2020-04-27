@@ -20,8 +20,6 @@ class FlowButton: UIButton {
         self.setTitle(setTitle, for: UIControl.State.normal)
         self.setTitleColor(UIColor.assistantColor, for: UIControl.State.normal)
         self.backgroundColor = UIColor.clear
-        self.layer.masksToBounds = true
-        self.layer.cornerRadius = 2
         self.titleLabel?.font = UIFont.boldSystemFont(ofSize: 28)
         self.sizeToFit()
     }
