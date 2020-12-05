@@ -76,7 +76,7 @@
 		A2674B232455D9D9001828FE /* Constraints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constraints.swift; sourceTree = "<group>"; };
 		A26E246923E6DB5C00324D0C /* UseUserDefault.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UseUserDefault.swift; sourceTree = "<group>"; };
 		A26F072023E58F6100DB0251 /* ReadTextFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadTextFile.swift; sourceTree = "<group>"; };
-		A26F072223E58FEB00DB0251 /* jawiki-20200120-1.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "jawiki-20200120-1.txt"; sourceTree = SOURCE_ROOT; };
+		A26F072223E58FEB00DB0251 /* jawiki-20200120-1.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = "jawiki-20200120-1.txt"; path = "Vocabulabo/Data/jawiki-20200120-1.txt"; sourceTree = SOURCE_ROOT; };
 		A26F072423E594D800DB0251 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		A26F072623E596BB00DB0251 /* WikipediaUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WikipediaUtil.swift; sourceTree = "<group>"; };
 		A29E4E7C23EB08070055787A /* FlowButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlowButton.swift; sourceTree = "<group>"; };
@@ -159,18 +159,12 @@
 		A21DA97A23E560ED00EBF8D3 /* Vocabulabo */ = {
 			isa = PBXGroup;
 			children = (
-				A26F072223E58FEB00DB0251 /* jawiki-20200120-1.txt */,
 				A21DA97B23E560ED00EBF8D3 /* AppDelegate.swift */,
 				A21DA97D23E560ED00EBF8D3 /* SceneDelegate.swift */,
-				A21DA98123E560ED00EBF8D3 /* Main.storyboard */,
-				A21DA97F23E560ED00EBF8D3 /* ViewController.swift */,
-				A29E4E7C23EB08070055787A /* FlowButton.swift */,
-				A26E246923E6DB5C00324D0C /* UseUserDefault.swift */,
-				A21DA9AE23E5614300EBF8D3 /* UseRealm.swift */,
-				A2674B232455D9D9001828FE /* Constraints.swift */,
-				A26F072623E596BB00DB0251 /* WikipediaUtil.swift */,
-				A26F072423E594D800DB0251 /* Constants.swift */,
-				A26F072023E58F6100DB0251 /* ReadTextFile.swift */,
+				A28AE19C257B41A800572BA5 /* View */,
+				A28AE19D257B41F300572BA5 /* Data */,
+				A28AE19B257B418100572BA5 /* Setting */,
+				A28AE19A257B411400572BA5 /* Utility */,
 				A21DA98723E560EF00EBF8D3 /* Assets.xcassets */,
 				A2674B212455C851001828FE /* Color.xcassets */,
 				A21DA98923E560EF00EBF8D3 /* LaunchScreen.storyboard */,
@@ -196,6 +190,44 @@
 				A21DA9A223E560EF00EBF8D3 /* Info.plist */,
 			);
 			path = VocabulaboUITests;
+			sourceTree = "<group>";
+		};
+		A28AE19A257B411400572BA5 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				A26E246923E6DB5C00324D0C /* UseUserDefault.swift */,
+				A21DA9AE23E5614300EBF8D3 /* UseRealm.swift */,
+				A26F072623E596BB00DB0251 /* WikipediaUtil.swift */,
+				A26F072023E58F6100DB0251 /* ReadTextFile.swift */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		A28AE19B257B418100572BA5 /* Setting */ = {
+			isa = PBXGroup;
+			children = (
+				A2674B232455D9D9001828FE /* Constraints.swift */,
+				A26F072423E594D800DB0251 /* Constants.swift */,
+			);
+			path = Setting;
+			sourceTree = "<group>";
+		};
+		A28AE19C257B41A800572BA5 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A21DA98123E560ED00EBF8D3 /* Main.storyboard */,
+				A21DA97F23E560ED00EBF8D3 /* ViewController.swift */,
+				A29E4E7C23EB08070055787A /* FlowButton.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A28AE19D257B41F300572BA5 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				A26F072223E58FEB00DB0251 /* jawiki-20200120-1.txt */,
+			);
+			path = Data;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
