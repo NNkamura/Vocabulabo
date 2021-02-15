@@ -33,15 +33,20 @@ class ViewController: UIViewController {
     }
     
     func buttonSetup(){
-        var useButtonList:[UIButton] = []
+        var useButtonList:[FlowButtonView] = []
         // ボタンの生成
         for i in 0 ..< Int(wordCount){
-            let button: FlowButton = {
-                let button = FlowButton(frame:CGRect(x: Int(boundWidth + clearSpace), y: 25 + (i * 25), width: 0, height: 0),title:"")
-                button.addTarget(self, action: #selector(buttonAction(word:)), for: .touchDown)
-                return button
+            let flowButtonView: FlowButtonView = {
+                let createButton = FlowButtonView(frame:CGRect(x: Int(boundWidth + clearSpace), y: 25 + (i * 25), width: 20, height: 20))
+                // タップジェスチャーを作成します。
+                let singleTapGesture = TapgesutureWithView(target: self, action: #selector(singleTap(_:)))
+                singleTapGesture.numberOfTapsRequired = 1
+                singleTapGesture.myView = createButton
+                createButton.addGestureRecognizer(singleTapGesture)
+                return createButton
             }()
-            useButtonList.append(button)
+            
+            useButtonList.append(flowButtonView)
         }
         
         // ボタン文字の代入
@@ -51,29 +56,20 @@ class ViewController: UIViewController {
             
             var timer = Timer.scheduledTimer(withTimeInterval: randomDouble, repeats: true, block: { (timer) in
                 textChange(wordButton: useButtonList[i])
-                //                textMove(wordButton: useButtonList[i], duration: randomDouble, moveToX: boundWidth + self.clearSpace + self.clearSpace)
-                textMove(wordButton: useButtonList[i], time: randomDouble, moveToX: boundWidth + self.clearSpace + self.clearSpace)
+                textMove(wordButton: useButtonList[i], duration: randomDouble, moveToX: boundWidth + self.clearSpace + self.clearSpace)
             })
         }
-        
-        func textChange(wordButton:UIButton){
-            wordButton.setTitle(self.buttonTitles!.randomElement()!.titleName, for: .normal)
-            wordButton.sizeToFit()
+        func textChange(wordButton:FlowButtonView){
+            wordButton.title.text = self.buttonTitles!.randomElement()!.titleName
+            wordButton.title.sizeToFit()
+            wordButton.frame.size = wordButton.title.frame.size
         }
-        
-        /// 未完成、タップ不可能だがイメージ通りの動作パターン
-        func textMove(wordButton:UIButton,duration:TimeInterval,moveToX:CGFloat){
+        /// タップ可能なViewを動かす
+        func textMove(wordButton:FlowButtonView,duration:TimeInterval,moveToX:CGFloat){
             UIView.animate(withDuration: duration, delay: 0, animations: {
                 wordButton.center.x -= moveToX
             }, completion: { _ in
                 wordButton.center.x += moveToX
-            })
-        }
-        
-        ///  未完成、タップ可能なボタンの動作パターン
-        func textMove(wordButton:UIButton,time:Double,moveToX:CGFloat){
-            var timer = Timer.scheduledTimer(withTimeInterval: time / 100, repeats: true, block: { (timer) in
-                wordButton.center.x -= moveToX / 100
             })
         }
     }
@@ -107,8 +103,25 @@ class ViewController: UIViewController {
         }
     }
     
-    @objc func buttonAction(word:UIButton){
-        let wordStr = word.titleLabel?.text ?? ""
+//    @objc func buttonAction(word:UIButton){
+//        let wordStr = word.titleLabel?.text ?? ""
+//        let urlString = "https://ja.wikipedia.org/wiki/" + wordStr
+//        guard let encodeUrlString: String = urlString.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed),
+//            let url = URL(string:encodeUrlString) else{
+//                return
+//        }
+//        if (UIApplication.shared.canOpenURL(url)) {
+//            UIApplication.shared.open(url)
+//        }
+//    }
+    
+    /**
+     シングルタップされた時に呼び出されます。
+     - Parameter gesture: タップジェスチャーオブジェクト
+     */
+    @objc func singleTap(_ gesture: TapgesutureWithView) {
+        
+        let wordStr = gesture.myView.title.text ?? ""
         let urlString = "https://ja.wikipedia.org/wiki/" + wordStr
         guard let encodeUrlString: String = urlString.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed),
             let url = URL(string:encodeUrlString) else{
@@ -120,3 +133,7 @@ class ViewController: UIViewController {
     }
 }
 
+
+class TapgesutureWithView: UITapGestureRecognizer{
+    var myView = FlowButtonView()
+}
